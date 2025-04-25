@@ -8,8 +8,7 @@ final class UserListInitial extends UserListState {}
 class EventState extends UserListState {}
 
 class UserListSuccess extends UserListState {
-  List<UserEntity> dataList;
-
+ final List<UserEntity> dataList;
   UserListSuccess(this.dataList);
 }
 

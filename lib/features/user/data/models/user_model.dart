@@ -12,6 +12,7 @@ class UserModel extends UserEntity {
     );
   }
 
+  @override
   Map<String, dynamic> toMap() {
     return {
       'name': name,

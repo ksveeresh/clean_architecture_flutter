@@ -1,7 +1,6 @@
 
 import 'package:clean_architecture/features/user/data/models/user_model.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:sqflite/sqlite_api.dart';
 
 abstract class UserLocalDataSource {
   Future<List<UserModel>> getUserById();

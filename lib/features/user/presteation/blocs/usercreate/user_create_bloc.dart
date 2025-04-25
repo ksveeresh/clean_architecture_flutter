@@ -1,9 +1,8 @@
-import 'dart:async';
 
-import 'package:bloc/bloc.dart';
 import 'package:clean_architecture/features/user/domain/entity/user_entity.dart';
 import 'package:clean_architecture/features/user/domain/usecase/insert_user_user_case.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'user_create_event.dart';
 

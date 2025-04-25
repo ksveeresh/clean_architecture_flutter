@@ -12,6 +12,7 @@ class UserListBloc extends Bloc<UserListEvent, UserListState> {
 
   UserListBloc(this.getUserUseCase) : super(UserListInitial()) {
     on<UserDataEvent>((event, emit) async {
+      emit(UserListLoading());
       List<UserEntity> tempList = await getUserUseCase.call();
       if (tempList.isNotEmpty) {
         await Future.delayed(Duration(seconds: 1));

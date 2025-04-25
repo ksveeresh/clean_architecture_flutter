@@ -41,8 +41,8 @@ class UserList extends StatelessWidget {
                     )
                     : (state is UserListFailure)
                     ? Center(child: Text(state.error))
-                    : (state is UserListInitial)
-                    ? CircularProgressIndicator()
+                    : (state is UserListLoading)
+                    ? Center(child: CircularProgressIndicator())
                     : Container(),
             floatingActionButton: FloatingActionButton(
               onPressed: () {
